@@ -1,3 +1,8 @@
+//Entities (Domain):
+
+// Pure Go structs that represent core business objects (e.g., Task).
+// Domain interfaces are defined here, decoupling your code from external frameworks like the database or web libraries.
+
 package domain
 
 type Task struct {

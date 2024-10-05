@@ -1,0 +1,29 @@
+go-chi-sqlx-clean-architecture/
+│
+├── cmd/                # Main application entry points
+│   └── main.go
+│
+├── config/             # Configuration files (e.g., env variables)
+│   └── config.go
+│
+├── internal/
+│   ├── domain/         # Entities and interfaces (core business logic)
+│   │   └── models.go
+│   └── usecase/        # Application-specific business logic
+│       └── task_usecase.go
+│   └── repository/     # Interface for database repositories
+│       └── task_repository.go
+│
+├── infrastructure/
+│   ├── database/       # SQLx implementation of repositories
+│   │   └── sqlx_task_repository.go
+│   └── router/         # HTTP routing (chi router)
+│       └── chi_router.go
+│
+├── api/
+│   ├── handler/        # HTTP handlers
+│   │   └── task_handler.go
+│   └── middleware/     # Chi middlewares
+│       └── logging.go
+│
+└── go.mod              # Go module
